@@ -11,7 +11,7 @@ import SpriteKit
 class GameScene: SKScene {
     
     var activeSliceBG: SKShapeNode!
-    var activeSlcieFG: SKShapeNode!
+    var activeSliceFG: SKShapeNode!
     
     var gameScore: SKLabelNode!
     var score: Int = 0 {
@@ -66,5 +66,22 @@ class GameScene: SKScene {
             
             livesImage.append(spriteNode)
         }
+    }
+    
+    func createSlices() {
+        activeSliceBG = SKShapeNode()
+        activeSliceBG.zPosition = 2
+        
+        activeSliceFG = SKShapeNode()
+        activeSliceFG.zPosition = 2
+        
+        activeSliceBG.strokeColor = UIColor(red: 1, green: 0.9, blue: 0, alpha: 1)
+        activeSliceBG.lineWidth = 9
+        
+        activeSliceFG.strokeColor = UIColor.whiteColor()
+        activeSliceFG.lineWidth = 5
+        
+        addChild(activeSliceBG)
+        addChild(activeSliceFG)
     }
 }
