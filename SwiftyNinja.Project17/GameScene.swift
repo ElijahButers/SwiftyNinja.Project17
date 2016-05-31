@@ -50,6 +50,14 @@ class GameScene: SKScene {
         /* Called before each frame is rendered */
     }
     
+    override func touchesMoved(touches: Set<UITouch>, withEvent event: UIEvent?) {
+        
+        guard let touch = touches.first else { return }
+        
+        let location = touch.locationInNode(self)
+        activeSlicePoints.append(location)
+    }
+    
     func createScore() {
         gameScore = SKLabelNode(fontNamed: "Chalkduster")
         gameScore.text = "Score: 0"
