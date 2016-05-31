@@ -30,6 +30,9 @@ class GameScene: SKScene {
         
         physicsWorld.gravity = CGVector(dx: 0, dy: -6)
         physicsWorld.speed = 0.85
+        
+        createScore()
+        createLives()
     }
     
     override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?) {
@@ -40,5 +43,25 @@ class GameScene: SKScene {
    
     override func update(currentTime: CFTimeInterval) {
         /* Called before each frame is rendered */
+    }
+    
+    func createScore() {
+        gameScore = SKLabelNode(fontNamed: "Chalkduster")
+        gameScore.text = "Score: 0"
+        gameScore.horizontalAlignmentMode = .Left
+        gameScore.fontSize = 48
+        addChild(gameScore)
+        
+        gameScore.position = CGPoint(x: 8, y: 8)
+    }
+    
+    func createLives() {
+        for i in 0 ..< 3 {
+            let spriteNode = SKSpriteNode(imageNamed: "sliceLife")
+            spriteNode.position = CGPoint(x: CGFloat(834 + (i * 70)), y: 720)
+            addChild(spriteNode)
+            
+            livesImage.append(spriteNode)
+        }
     }
 }
