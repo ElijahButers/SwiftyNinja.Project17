@@ -36,6 +36,7 @@ class GameScene: SKScene {
         
         createScore()
         createLives()
+        createSlices()
     }
     
     override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?) {
