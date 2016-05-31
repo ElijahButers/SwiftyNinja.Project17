@@ -11,7 +11,11 @@ import SpriteKit
 class GameScene: SKScene {
     override func didMoveToView(view: SKView) {
         /* Setup your scene here */
-        
+        let background = SKSpriteNode(imageNamed: "sliceBackground")
+        background.position = CGPoint(x: 512, y: 384)
+        background.blendMode =  .Replace
+        background.zPosition = -1
+        addChild(background)
     }
     
     override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?) {
