@@ -42,7 +42,20 @@ class GameScene: SKScene {
     
     override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?) {
        /* Called when a touch begins */
+        super.touchesBegan(touches, withEvent: event)
         
+        activeSlicePoints.removeAll(keepCapacity: true)
+        
+        if let touch = touches.first {
+            let location = touch.locationInNode(self)
+            activeSlicePoints.append(location)
+            
+            activeSliceBG.removeAllActions()
+            activeSliceFG.removeAllActions()
+            
+            activeSliceBG.alpha = 1
+            activeSliceFG.alpha = 1
+        }
 
     }
    
