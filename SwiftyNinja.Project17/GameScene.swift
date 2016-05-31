@@ -12,6 +12,7 @@ class GameScene: SKScene {
     
     var activeSliceBG: SKShapeNode!
     var activeSliceFG: SKShapeNode!
+    var activeSlicePoints = [CGPoint]()
     
     var gameScore: SKLabelNode!
     var score: Int = 0 {
