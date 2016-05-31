@@ -10,6 +10,9 @@ import SpriteKit
 
 class GameScene: SKScene {
     
+    var activeSliceBG: SKShapeNode!
+    var activeSlcieFG: SKShapeNode!
+    
     var gameScore: SKLabelNode!
     var score: Int = 0 {
         didSet {
