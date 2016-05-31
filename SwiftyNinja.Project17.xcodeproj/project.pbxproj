@@ -14,6 +14,29 @@
 		E2FB271A1CFD782A006FBA1B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E2FB27181CFD782A006FBA1B /* Main.storyboard */; };
 		E2FB271C1CFD782A006FBA1B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E2FB271B1CFD782A006FBA1B /* Assets.xcassets */; };
 		E2FB271F1CFD782A006FBA1B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E2FB271D1CFD782A006FBA1B /* LaunchScreen.storyboard */; };
+		E2FB273D1CFD7BAB006FBA1B /* explosion.caf in Resources */ = {isa = PBXBuildFile; fileRef = E2FB27271CFD7BAB006FBA1B /* explosion.caf */; };
+		E2FB273E1CFD7BAB006FBA1B /* launch.caf in Resources */ = {isa = PBXBuildFile; fileRef = E2FB27281CFD7BAB006FBA1B /* launch.caf */; };
+		E2FB273F1CFD7BAB006FBA1B /* penguin.png in Resources */ = {isa = PBXBuildFile; fileRef = E2FB27291CFD7BAB006FBA1B /* penguin.png */; };
+		E2FB27401CFD7BAB006FBA1B /* penguin@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E2FB272A1CFD7BAB006FBA1B /* penguin@2x.png */; };
+		E2FB27411CFD7BAB006FBA1B /* sliceBackground.png in Resources */ = {isa = PBXBuildFile; fileRef = E2FB272B1CFD7BAB006FBA1B /* sliceBackground.png */; };
+		E2FB27421CFD7BAB006FBA1B /* sliceBackground@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E2FB272C1CFD7BAB006FBA1B /* sliceBackground@2x.png */; };
+		E2FB27431CFD7BAB006FBA1B /* sliceBomb.png in Resources */ = {isa = PBXBuildFile; fileRef = E2FB272D1CFD7BAB006FBA1B /* sliceBomb.png */; };
+		E2FB27441CFD7BAB006FBA1B /* sliceBomb@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E2FB272E1CFD7BAB006FBA1B /* sliceBomb@2x.png */; };
+		E2FB27451CFD7BAB006FBA1B /* sliceBombFuse.caf in Resources */ = {isa = PBXBuildFile; fileRef = E2FB272F1CFD7BAB006FBA1B /* sliceBombFuse.caf */; };
+		E2FB27461CFD7BAB006FBA1B /* sliceFuse.sks in Resources */ = {isa = PBXBuildFile; fileRef = E2FB27301CFD7BAB006FBA1B /* sliceFuse.sks */; };
+		E2FB27471CFD7BAB006FBA1B /* sliceHitBomb.sks in Resources */ = {isa = PBXBuildFile; fileRef = E2FB27311CFD7BAB006FBA1B /* sliceHitBomb.sks */; };
+		E2FB27481CFD7BAB006FBA1B /* sliceHitEnemy.sks in Resources */ = {isa = PBXBuildFile; fileRef = E2FB27321CFD7BAB006FBA1B /* sliceHitEnemy.sks */; };
+		E2FB27491CFD7BAB006FBA1B /* sliceLife.png in Resources */ = {isa = PBXBuildFile; fileRef = E2FB27331CFD7BAB006FBA1B /* sliceLife.png */; };
+		E2FB274A1CFD7BAB006FBA1B /* sliceLife@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E2FB27341CFD7BAB006FBA1B /* sliceLife@2x.png */; };
+		E2FB274B1CFD7BAB006FBA1B /* sliceLifeGone.png in Resources */ = {isa = PBXBuildFile; fileRef = E2FB27351CFD7BAB006FBA1B /* sliceLifeGone.png */; };
+		E2FB274C1CFD7BAB006FBA1B /* sliceLifeGone@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E2FB27361CFD7BAB006FBA1B /* sliceLifeGone@2x.png */; };
+		E2FB274D1CFD7BAB006FBA1B /* spark.png in Resources */ = {isa = PBXBuildFile; fileRef = E2FB27371CFD7BAB006FBA1B /* spark.png */; };
+		E2FB274E1CFD7BAB006FBA1B /* swoosh1.caf in Resources */ = {isa = PBXBuildFile; fileRef = E2FB27381CFD7BAB006FBA1B /* swoosh1.caf */; };
+		E2FB274F1CFD7BAB006FBA1B /* swoosh2.caf in Resources */ = {isa = PBXBuildFile; fileRef = E2FB27391CFD7BAB006FBA1B /* swoosh2.caf */; };
+		E2FB27501CFD7BAB006FBA1B /* swoosh3.caf in Resources */ = {isa = PBXBuildFile; fileRef = E2FB273A1CFD7BAB006FBA1B /* swoosh3.caf */; };
+		E2FB27511CFD7BAB006FBA1B /* whack.caf in Resources */ = {isa = PBXBuildFile; fileRef = E2FB273B1CFD7BAB006FBA1B /* whack.caf */; };
+		E2FB27521CFD7BAB006FBA1B /* wrong.caf in Resources */ = {isa = PBXBuildFile; fileRef = E2FB273C1CFD7BAB006FBA1B /* wrong.caf */; };
+		E2FB27541CFD7BEF006FBA1B /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2FB27531CFD7BEF006FBA1B /* Helper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +49,29 @@
 		E2FB271B1CFD782A006FBA1B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E2FB271E1CFD782A006FBA1B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E2FB27201CFD782A006FBA1B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E2FB27271CFD7BAB006FBA1B /* explosion.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = explosion.caf; sourceTree = "<group>"; };
+		E2FB27281CFD7BAB006FBA1B /* launch.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = launch.caf; sourceTree = "<group>"; };
+		E2FB27291CFD7BAB006FBA1B /* penguin.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = penguin.png; sourceTree = "<group>"; };
+		E2FB272A1CFD7BAB006FBA1B /* penguin@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "penguin@2x.png"; sourceTree = "<group>"; };
+		E2FB272B1CFD7BAB006FBA1B /* sliceBackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sliceBackground.png; sourceTree = "<group>"; };
+		E2FB272C1CFD7BAB006FBA1B /* sliceBackground@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "sliceBackground@2x.png"; sourceTree = "<group>"; };
+		E2FB272D1CFD7BAB006FBA1B /* sliceBomb.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sliceBomb.png; sourceTree = "<group>"; };
+		E2FB272E1CFD7BAB006FBA1B /* sliceBomb@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "sliceBomb@2x.png"; sourceTree = "<group>"; };
+		E2FB272F1CFD7BAB006FBA1B /* sliceBombFuse.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = sliceBombFuse.caf; sourceTree = "<group>"; };
+		E2FB27301CFD7BAB006FBA1B /* sliceFuse.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = sliceFuse.sks; sourceTree = "<group>"; };
+		E2FB27311CFD7BAB006FBA1B /* sliceHitBomb.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = sliceHitBomb.sks; sourceTree = "<group>"; };
+		E2FB27321CFD7BAB006FBA1B /* sliceHitEnemy.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = sliceHitEnemy.sks; sourceTree = "<group>"; };
+		E2FB27331CFD7BAB006FBA1B /* sliceLife.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sliceLife.png; sourceTree = "<group>"; };
+		E2FB27341CFD7BAB006FBA1B /* sliceLife@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "sliceLife@2x.png"; sourceTree = "<group>"; };
+		E2FB27351CFD7BAB006FBA1B /* sliceLifeGone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sliceLifeGone.png; sourceTree = "<group>"; };
+		E2FB27361CFD7BAB006FBA1B /* sliceLifeGone@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "sliceLifeGone@2x.png"; sourceTree = "<group>"; };
+		E2FB27371CFD7BAB006FBA1B /* spark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = spark.png; sourceTree = "<group>"; };
+		E2FB27381CFD7BAB006FBA1B /* swoosh1.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = swoosh1.caf; sourceTree = "<group>"; };
+		E2FB27391CFD7BAB006FBA1B /* swoosh2.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = swoosh2.caf; sourceTree = "<group>"; };
+		E2FB273A1CFD7BAB006FBA1B /* swoosh3.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = swoosh3.caf; sourceTree = "<group>"; };
+		E2FB273B1CFD7BAB006FBA1B /* whack.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = whack.caf; sourceTree = "<group>"; };
+		E2FB273C1CFD7BAB006FBA1B /* wrong.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = wrong.caf; sourceTree = "<group>"; };
+		E2FB27531CFD7BEF006FBA1B /* Helper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,12 +108,43 @@
 				E2FB27121CFD782A006FBA1B /* GameScene.sks */,
 				E2FB27141CFD782A006FBA1B /* GameScene.swift */,
 				E2FB27161CFD782A006FBA1B /* GameViewController.swift */,
+				E2FB27531CFD7BEF006FBA1B /* Helper.swift */,
 				E2FB27181CFD782A006FBA1B /* Main.storyboard */,
+				E2FB27261CFD7BAB006FBA1B /* Content */,
 				E2FB271B1CFD782A006FBA1B /* Assets.xcassets */,
 				E2FB271D1CFD782A006FBA1B /* LaunchScreen.storyboard */,
 				E2FB27201CFD782A006FBA1B /* Info.plist */,
 			);
 			path = SwiftyNinja.Project17;
+			sourceTree = "<group>";
+		};
+		E2FB27261CFD7BAB006FBA1B /* Content */ = {
+			isa = PBXGroup;
+			children = (
+				E2FB27271CFD7BAB006FBA1B /* explosion.caf */,
+				E2FB27281CFD7BAB006FBA1B /* launch.caf */,
+				E2FB27291CFD7BAB006FBA1B /* penguin.png */,
+				E2FB272A1CFD7BAB006FBA1B /* penguin@2x.png */,
+				E2FB272B1CFD7BAB006FBA1B /* sliceBackground.png */,
+				E2FB272C1CFD7BAB006FBA1B /* sliceBackground@2x.png */,
+				E2FB272D1CFD7BAB006FBA1B /* sliceBomb.png */,
+				E2FB272E1CFD7BAB006FBA1B /* sliceBomb@2x.png */,
+				E2FB272F1CFD7BAB006FBA1B /* sliceBombFuse.caf */,
+				E2FB27301CFD7BAB006FBA1B /* sliceFuse.sks */,
+				E2FB27311CFD7BAB006FBA1B /* sliceHitBomb.sks */,
+				E2FB27321CFD7BAB006FBA1B /* sliceHitEnemy.sks */,
+				E2FB27331CFD7BAB006FBA1B /* sliceLife.png */,
+				E2FB27341CFD7BAB006FBA1B /* sliceLife@2x.png */,
+				E2FB27351CFD7BAB006FBA1B /* sliceLifeGone.png */,
+				E2FB27361CFD7BAB006FBA1B /* sliceLifeGone@2x.png */,
+				E2FB27371CFD7BAB006FBA1B /* spark.png */,
+				E2FB27381CFD7BAB006FBA1B /* swoosh1.caf */,
+				E2FB27391CFD7BAB006FBA1B /* swoosh2.caf */,
+				E2FB273A1CFD7BAB006FBA1B /* swoosh3.caf */,
+				E2FB273B1CFD7BAB006FBA1B /* whack.caf */,
+				E2FB273C1CFD7BAB006FBA1B /* wrong.caf */,
+			);
+			path = Content;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -128,10 +205,32 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E2FB27411CFD7BAB006FBA1B /* sliceBackground.png in Resources */,
+				E2FB27441CFD7BAB006FBA1B /* sliceBomb@2x.png in Resources */,
+				E2FB27421CFD7BAB006FBA1B /* sliceBackground@2x.png in Resources */,
+				E2FB27481CFD7BAB006FBA1B /* sliceHitEnemy.sks in Resources */,
+				E2FB273F1CFD7BAB006FBA1B /* penguin.png in Resources */,
+				E2FB27451CFD7BAB006FBA1B /* sliceBombFuse.caf in Resources */,
+				E2FB27511CFD7BAB006FBA1B /* whack.caf in Resources */,
+				E2FB27461CFD7BAB006FBA1B /* sliceFuse.sks in Resources */,
+				E2FB27401CFD7BAB006FBA1B /* penguin@2x.png in Resources */,
 				E2FB27131CFD782A006FBA1B /* GameScene.sks in Resources */,
+				E2FB273E1CFD7BAB006FBA1B /* launch.caf in Resources */,
+				E2FB274D1CFD7BAB006FBA1B /* spark.png in Resources */,
+				E2FB27521CFD7BAB006FBA1B /* wrong.caf in Resources */,
+				E2FB27471CFD7BAB006FBA1B /* sliceHitBomb.sks in Resources */,
+				E2FB27431CFD7BAB006FBA1B /* sliceBomb.png in Resources */,
+				E2FB274B1CFD7BAB006FBA1B /* sliceLifeGone.png in Resources */,
 				E2FB271F1CFD782A006FBA1B /* LaunchScreen.storyboard in Resources */,
+				E2FB274E1CFD7BAB006FBA1B /* swoosh1.caf in Resources */,
+				E2FB274C1CFD7BAB006FBA1B /* sliceLifeGone@2x.png in Resources */,
+				E2FB27501CFD7BAB006FBA1B /* swoosh3.caf in Resources */,
+				E2FB274A1CFD7BAB006FBA1B /* sliceLife@2x.png in Resources */,
+				E2FB274F1CFD7BAB006FBA1B /* swoosh2.caf in Resources */,
+				E2FB273D1CFD7BAB006FBA1B /* explosion.caf in Resources */,
 				E2FB271C1CFD782A006FBA1B /* Assets.xcassets in Resources */,
 				E2FB271A1CFD782A006FBA1B /* Main.storyboard in Resources */,
+				E2FB27491CFD7BAB006FBA1B /* sliceLife.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -145,6 +244,7 @@
 				E2FB27151CFD782A006FBA1B /* GameScene.swift in Sources */,
 				E2FB27171CFD782A006FBA1B /* GameViewController.swift in Sources */,
 				E2FB27111CFD782A006FBA1B /* AppDelegate.swift in Sources */,
+				E2FB27541CFD7BEF006FBA1B /* Helper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -294,6 +394,7 @@
 				E2FB27251CFD782A006FBA1B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
