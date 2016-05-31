@@ -16,6 +16,9 @@ class GameScene: SKScene {
         background.blendMode =  .Replace
         background.zPosition = -1
         addChild(background)
+        
+        physicsWorld.gravity = CGVector(dx: 0, dy: -6)
+        physicsWorld.speed = 0.85
     }
     
     override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?) {
