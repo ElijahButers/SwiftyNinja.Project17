@@ -13,7 +13,7 @@ class GameScene: SKScene {
     var activeSliceBG: SKShapeNode!
     var activeSliceFG: SKShapeNode!
     var activeSlicePoints = [CGPoint]()
-    var smooshSoundActive = false
+    var swooshSoundActive = false
     
     var gameScore: SKLabelNode!
     var score: Int = 0 {
@@ -147,5 +147,18 @@ class GameScene: SKScene {
         
         activeSliceBG.path = path.CGPath
         activeSliceFG.path = path.CGPath
+    }
+    
+    func playSwooshSound() {
+        swooshSoundActive = true
+        
+        let randomNumber = RandomInt(min: 1, max: 3)
+        let soundName = "swoosh\(randomNumber).caf"
+        
+        let swooshSound = SKAction.playSoundFileNamed(soundName, waitForCompletion: true)
+        
+        runAction(swooshSound) { [unowned self] in
+            self.swooshSoundActive = false
+        }
     }
 }
