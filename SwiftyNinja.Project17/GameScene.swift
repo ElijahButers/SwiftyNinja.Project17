@@ -170,4 +170,29 @@ class GameScene: SKScene {
             self.swooshSoundActive = false
         }
     }
+    
+    func createEnemy(forceBomb forceBomb: ForceBomb = .Default) {
+        
+        var enemy: SKSpriteNode
+        
+        var enemyType = RandomInt(min: 0, max: 6)
+        if forceBomb == .Never {
+            enemyType = 1
+        } else if forceBomb == .Always {
+            enemyType = 0
+        }
+        
+        if enemyType == 0 {
+            // bomb code goes here
+        } else {
+            enemy = SKSpriteNode(imageNamed: "penguin")
+            runAction(SKAction.playSoundFileNamed("launch.caf", waitForCompletion: false))
+            enemy.name = "enemy"
+        }
+        
+        // position goes here
+        
+        addChild(enemy)
+        activeEnemies.append(enemy)
+    }
 }
