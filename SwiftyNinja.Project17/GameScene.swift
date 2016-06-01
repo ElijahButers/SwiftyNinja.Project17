@@ -8,6 +8,10 @@
 
 import SpriteKit
 
+enum ForceBomb {
+    case Never, Always, Default
+}
+
 class GameScene: SKScene {
     
     var activeSliceBG: SKShapeNode!
