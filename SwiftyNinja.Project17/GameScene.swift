@@ -120,4 +120,27 @@ class GameScene: SKScene {
         addChild(activeSliceBG)
         addChild(activeSliceFG)
     }
+    
+    func redrawActiveSlice() {
+        
+        if activeSlicePoints.count < 2 {
+            activeSliceBG.path = nil
+            activeSliceFG.path = nil
+            return
+        }
+        
+        while activeSlicePoints.count > 12 {
+            activeSlicePoints.removeAtIndex(0)
+        }
+        
+        let path = UIBezierPath()
+        path.moveToPoint(activeSlicePoints[0])
+        
+        for i in 1 ..< activeSlicePoints.count {
+            path.addLineToPoint(activeSlicePoints[i])
+        }
+        
+        activeSliceBG.path = path.CGPath
+        activeSliceFG.path = path.CGPath
+    }
 }
