@@ -13,6 +13,7 @@ class GameScene: SKScene {
     var activeSliceBG: SKShapeNode!
     var activeSliceFG: SKShapeNode!
     var activeSlicePoints = [CGPoint]()
+    var smooshSoundActive = false
     
     var gameScore: SKLabelNode!
     var score: Int = 0 {
