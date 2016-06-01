@@ -18,6 +18,7 @@ class GameScene: SKScene {
     var activeSliceFG: SKShapeNode!
     var activeSlicePoints = [CGPoint]()
     var swooshSoundActive = false
+    var activeEnemies = [SKSpriteNode]()
     
     var gameScore: SKLabelNode!
     var score: Int = 0 {
