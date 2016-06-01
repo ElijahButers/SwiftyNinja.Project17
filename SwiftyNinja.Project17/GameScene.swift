@@ -55,6 +55,8 @@ class GameScene: SKScene {
             
             activeSliceBG.alpha = 1
             activeSliceFG.alpha = 1
+            
+            redrawActiveSlice()
         }
 
     }
@@ -69,6 +71,8 @@ class GameScene: SKScene {
         
         let location = touch.locationInNode(self)
         activeSlicePoints.append(location)
+        
+        redrawActiveSlice()
     }
     
     override func touchesEnded(touches: Set<UITouch>, withEvent event: UIEvent?) {
