@@ -73,6 +73,10 @@ class GameScene: SKScene {
         let location = touch.locationInNode(self)
         activeSlicePoints.append(location)
         
+        if !swooshSoundActive {
+            playSwooshSound()
+        }
+        
         redrawActiveSlice()
     }
     
