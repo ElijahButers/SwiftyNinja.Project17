@@ -9,6 +9,10 @@
 import SpriteKit
 import AVFoundation
 
+enum SequenceType: Int {
+    case OneNoBomb, One, TwoWithOneBomb, Two, Three, Four, Chain, FastChain
+}
+
 enum ForceBomb {
     case Never, Always, Default
 }
@@ -21,6 +25,12 @@ class GameScene: SKScene {
     var swooshSoundActive = false
     var bombSoundEffect: AVAudioPlayer!
     var activeEnemies = [SKSpriteNode]()
+    
+    var popupTime = 0.9
+    var sequence: [SequenceType]!
+    var sequencePosition = 0
+    var chainDelay = 3.0
+    var nextSequenceQueued = true
     
     var gameScore: SKLabelNode!
     var score: Int = 0 {
