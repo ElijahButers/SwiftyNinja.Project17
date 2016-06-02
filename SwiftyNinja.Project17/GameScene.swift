@@ -186,6 +186,29 @@ class GameScene: SKScene {
         
         if enemyType == 0 {
             // bomb code goes here
+            enemy = SKSpriteNode()
+            enemy.zPosition = 1
+            enemy.name = "bombContainer"
+            
+            let bombImage = SKSpriteNode(imageNamed: "sliceBomb")
+            bombImage.name = "bomb"
+            enemy.addChild(bombImage)
+            
+            if bombSoundEffect != nil {
+                bombSoundEffect.stop()
+                bombSoundEffect = nil
+            }
+            
+            let path = NSBundle.mainBundle().pathForResource("sliceBombFuse.caf", ofType: nil)!
+            let url = NSURL(fileURLWithPath: path)
+            let sound = try! AVAudioPlayer(contentsOfURL: url)
+            bombSoundEffect = sound
+            sound.play()
+            
+            let emitter = SKEmitterNode(fileNamed: "sliceFuse")!
+            emitter.position = CGPoint(x: 76, y: 94)
+            enemy.addChild(emitter)
+
         } else {
             enemy = SKSpriteNode(imageNamed: "penguin")
             runAction(SKAction.playSoundFileNamed("launch.caf", waitForCompletion: false))
