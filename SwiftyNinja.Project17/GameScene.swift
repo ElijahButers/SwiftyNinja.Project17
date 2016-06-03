@@ -107,6 +107,26 @@ class GameScene: SKScene {
                 bombSoundEffect = nil
             }
         }
+        
+        if activeEnemies.count > 0 {
+            for node in activeEnemies {
+                if node.position.y < -140 {
+                    node.removeFromParent()
+                    
+                    if let index = activeEnemies.indexOf(node) {
+                        activeEnemies.removeAtIndex(index)
+                    }
+                }
+            }
+        } else {
+            if !nextSequenceQueued {
+                RunAfterDelay(popupTime) { [unowned self] in
+                    self.tossEnemies()
+                }
+                
+                nextSequenceQueued = true
+            }
+        }
     }
     
     override func touchesMoved(touches: Set<UITouch>, withEvent event: UIEvent?) {
