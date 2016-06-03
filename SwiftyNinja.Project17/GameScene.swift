@@ -117,6 +117,17 @@ class GameScene: SKScene {
                         node.name = ""
                         
                         node.removeFromParent()
+                        
+                        if let index = activeEnemies.indexOf(node) {
+                            activeEnemies.removeAtIndex(index)
+                        }
+                    } else if node.name == "bombContainer" {
+                        node.name = ""
+                        node.removeFromParent()
+                        
+                        if let index = activeEnemies.indexOf(node) {
+                            activeEnemies.removeAtIndex(index)
+                        }
                     }
                 }
             }
