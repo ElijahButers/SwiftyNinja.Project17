@@ -111,10 +111,12 @@ class GameScene: SKScene {
         if activeEnemies.count > 0 {
             for node in activeEnemies {
                 if node.position.y < -140 {
-                    node.removeFromParent()
+                    node.removeAllActions()
                     
-                    if let index = activeEnemies.indexOf(node) {
-                        activeEnemies.removeAtIndex(index)
+                    if node.name == "enemy" {
+                        node.name = ""
+                        
+                        node.removeFromParent()
                     }
                 }
             }
