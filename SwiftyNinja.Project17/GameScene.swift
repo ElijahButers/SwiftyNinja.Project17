@@ -53,6 +53,16 @@ class GameScene: SKScene {
         physicsWorld.gravity = CGVector(dx: 0, dy: -6)
         physicsWorld.speed = 0.85
         
+        sequence = [.OneNoBomb, .OneNoBomb, .TwoWithOneBomb, .TwoWithOneBomb, .Three, .One, .Chain]
+        
+        for _ in 0 ... 1000 {
+            let nextSequence = SequenceType(rawValue: RandomInt(min: 2, max: 7))!
+            sequence.append(nextSequence)
+        }
+        RunAfterDelay(2) { [unowned self] in
+            self.tossEnemies()
+        }
+        
         createScore()
         createLives()
         createSlices()
