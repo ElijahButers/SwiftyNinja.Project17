@@ -140,6 +140,16 @@ class GameScene: SKScene {
             playSwooshSound()
         }
         
+        let nodes = nodesAtPoint(location)
+        
+        for node in nodes {
+            if node.name == "enemy" {
+                // destroy penguin
+            } else if node.name == "bomb" {
+                // destroy bomb
+            }
+        }
+        
         redrawActiveSlice()
     }
     
