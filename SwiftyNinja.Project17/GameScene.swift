@@ -145,6 +145,27 @@ class GameScene: SKScene {
         for node in nodes {
             if node.name == "enemy" {
                 // destroy penguin
+                let emitter = SKEmitterNode(fileNamed: "sliceHitEnemy")!
+                emitter.position = node.position
+                addChild(emitter)
+                
+                node.name = ""
+                
+                node.physicsBody!.dynamic = false
+                
+                let scaleOut = SKAction.scaleTo(0.001, duration: 0.2)
+                let fadeOut = SKAction.fadeOutWithDuration(0.2)
+                let group = SKAction.group([scaleOut, fadeOut])
+                
+                let seq = SKAction.sequence([group, SKAction.removeFromParent()])
+                node.runAction(seq)
+                
+                score += 1
+                
+                let index = activeEnemies.indexOf(node as! SKSpriteNode)!
+                activeEnemies.removeAtIndex(index)
+                runAction(SKAction.playSoundFileNamed("whack.caf", waitForCompletion: false))
+                
             } else if node.name == "bomb" {
                 // destroy bomb
             }
