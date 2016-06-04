@@ -153,6 +153,7 @@ class GameScene: SKScene {
         
         let location = touch.locationInNode(self)
         activeSlicePoints.append(location)
+        redrawActiveSlice()
         
         if !swooshSoundActive {
             playSwooshSound()
@@ -329,7 +330,7 @@ class GameScene: SKScene {
             sound.play()
             
             let emitter = SKEmitterNode(fileNamed: "sliceFuse")!
-            emitter.position = CGPoint(x: 76, y: 94)
+            emitter.position = CGPoint(x: 76, y: 64)
             enemy.addChild(emitter)
 
         } else {
@@ -358,7 +359,7 @@ class GameScene: SKScene {
         let randomYVelocity = RandomInt(min: 24, max: 32)
         
         enemy.physicsBody = SKPhysicsBody(circleOfRadius: 64)
-        enemy.physicsBody!.velocity = CGVector(dx: randomXVelocity * 40, dy: randomXVelocity * 40)
+        enemy.physicsBody!.velocity = CGVector(dx: randomXVelocity * 40, dy: randomYVelocity * 40)
         enemy.physicsBody!.angularVelocity = randomAngularVelocity
         enemy.physicsBody!.collisionBitMask = 0
         
