@@ -116,7 +116,7 @@ class GameScene: SKScene {
                     
                     if node.name == "enemy" {
                         node.name = ""
-                        
+                        subtractLife()
                         node.removeFromParent()
                         
                         if let index = activeEnemies.indexOf(node) {
