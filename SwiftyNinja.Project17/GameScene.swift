@@ -436,6 +436,7 @@ class GameScene: SKScene {
             life = livesImage[1]
         } else {
             life = livesImage[2]
+            endGame(triggeredByBomb: false)
         }
         life.texture = SKTexture(imageNamed: "sliceLifeGone")
         
