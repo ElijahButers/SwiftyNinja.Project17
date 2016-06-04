@@ -443,4 +443,26 @@ class GameScene: SKScene {
         life.yScale = 1.3
         life.runAction(SKAction.scaleTo(1, duration: 0.1))
     }
+    
+    func endGame(triggeredByBomb triggeredByBomb: Bool) {
+        if gameEnded {
+            return
+        }
+        
+        gameEnded = true
+        physicsWorld.speed = 0
+        userInteractionEnabled = false
+        
+        if bombSoundEffect != nil {
+            bombSoundEffect.stop()
+            bombSoundEffect = nil
+        }
+        
+        if triggeredByBomb {
+            livesImage[0].texture = SKTexture(imageNamed: "sliceLifeGone")
+            livesImage[1].texture = SKTexture(imageNamed: "sliceLifeGone")
+            livesImage[2].texture = SKTexture(imageNamed: "sliceLifeGone")
+        }
+    }
+
 }
