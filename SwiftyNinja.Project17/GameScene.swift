@@ -31,6 +31,7 @@ class GameScene: SKScene {
     var sequencePosition = 0
     var chainDelay = 3.0
     var nextSequenceQueued = true
+    var gameEnded = false
     
     var gameScore: SKLabelNode!
     var score: Int = 0 {
