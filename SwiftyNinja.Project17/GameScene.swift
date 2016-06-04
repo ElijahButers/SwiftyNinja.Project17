@@ -203,6 +203,7 @@ class GameScene: SKScene {
                 let index = activeEnemies.indexOf(node.parent as! SKSpriteNode)!
                 activeEnemies.removeAtIndex(index)
                 runAction(SKAction.playSoundFileNamed("explosion.caf", waitForCompletion: false))
+                endGame(triggeredByBomb: true)
             }
         }
         
