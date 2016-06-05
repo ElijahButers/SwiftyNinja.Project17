@@ -47,7 +47,7 @@ class GameScene: SKScene {
         /* Setup your scene here */
         let background = SKSpriteNode(imageNamed: "sliceBackground")
         background.position = CGPoint(x: 512, y: 384)
-        background.blendMode =  .Replace
+        background.blendMode = .Replace
         background.zPosition = -1
         addChild(background)
         
@@ -420,9 +420,10 @@ class GameScene: SKScene {
             RunAfterDelay(chainDelay / 10.0 * 3) { [unowned self] in self.createEnemy() }
             RunAfterDelay(chainDelay / 10.0 * 4) { [unowned self] in self.createEnemy() }
             
-            sequencePosition += 1
-            nextSequenceQueued = false
+            
         }
+        sequencePosition += 1
+        nextSequenceQueued = false
     }
     
     func subtractLife() {
